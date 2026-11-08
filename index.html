@@ -114,26 +114,6 @@ Resume
             box-shadow: 3px 3px 6px #888;
         }
 
-        .institution {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin: 8px 0 14px;
-        }
-
-        .institution-logo {
-            display: block;
-            width: 150px;
-            height: 64px;
-            object-fit: contain;
-            object-position: left center;
-            flex: 0 0 auto;
-        }
-
-        .institution-name {
-            margin: 0;
-        }
-
         .experience-list {
             list-style: none;
             padding: 0;
@@ -185,6 +165,32 @@ Resume
         .experience-date {
             color: #5B5B5B;
             white-space: nowrap;
+        }
+
+        .moments-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 600px);
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .moments-grid figure {
+            margin: 0;
+        }
+
+        .moments-grid img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 3px 3px 6px #888;
+        }
+
+        .moments-grid figcaption {
+            color: #5B5B5B;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 1.5;
         }
 
         @media (max-width: 768px) {
@@ -251,41 +257,57 @@ Resume
             <li><strong>Introduction</strong></li>
             <ul>
                 I was born and raised in Nanjing, China. Currently, I am a incoming master student at USTC, China.
-                I am fortunate to be supervised by Professor Shaohua Kevin Zhou, Fellow of IEEE MICCAI AIMBE IAMBE NAI.
-                I work as a Research Intern at Shanghai Artificial Intelligence Laboratory.
+                I am fortunate to be supervised by Professor S. Kevin Zhou, Fellow of IEEE MICCAI AIMBE IAMBE NAI.
+                Now, I am a Research Intern at Shanghai Artificial Intelligence Laboratory.
                 I’m currently focused on
                 <span style="color: red;">Medical AI, Agentic AI and Auto Discovery Systems.</span>
+                Iam actively looking for collaborators and intern opportunities with a passion for AI!
             </ul>
 
             <li><strong>Education</strong></li>
-            <ul>
+            <ul class="experience-list">
                 <li>
-                    2027.09-2030.06 &nbsp; &bull;&nbsp; M.E. Degree &nbsp; &bull;&nbsp;
-                    Supervisor:
-                    <a href="https://scholar.google.com/citations?user=8eNm2GMAAAAJ&hl=en">
-                        Shaohua Kevin Zhou
-                    </a>,
-                    Fellow of IEEE MICCAI AIMBE IAMBE NAI.<br>
+                    <div class="experience-logo">
+                        <img src="assets/ustc.jpg" alt="USTC logo">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <span class="experience-place">
+                                University of Science and Technology of China, China
+                            </span>
+                            <span class="experience-date">Sep. 2027 – Jun. 2030</span>
+                        </div>
+                        M.E. Degree<br>
+                        - Supervised by
+                        <a href="https://scholar.google.com/citations?user=8eNm2GMAAAAJ&hl=en">
+                            S. Kevin Zhou
+                        </a>,
+                        Fellow of IEEE MICCAI AIMBE IAMBE NAI.
+                    </div>
                 </li>
-                <div class="institution">
-                    <img class="institution-logo" src="assets/ustc.jpg" alt="USTC logo">
-                    <h6 class="institution-name">University of Science and Technology of China, China</h6>
-                </div>
 
                 <li>
-                    2023.09-2027.06 &nbsp; &bull;&nbsp; B.E. Degree &nbsp; &bull;&nbsp;
-                    Supervisor:
-                    <a href="https://ai.ntu.edu.cn/2024/0817/c9718a246568/page.htm">Lili Zhao</a>.<br>
+                    <div class="experience-logo">
+                        <img src="assets/ntu.png" alt="Nantong University logo">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <span class="experience-place">Nantong University, China</span>
+                            <span class="experience-date">Sep. 2023 – Jun. 2027</span>
+                        </div>
+                        B.E. Degree<br>
+                        - Supervised by
+                        <a href="https://ai.ntu.edu.cn/2024/0817/c9718a246568/page.htm">
+                            Lili Zhao
+                        </a>.
+                    </div>
                 </li>
-                <div class="institution">
-                    <img class="institution-logo" src="assets/ntu.png" alt="Nantong University logo">
-                    <h6 class="institution-name">Nantong University, China</h6>
-                </div>
             </ul>
 
             <li><strong>Experience</strong></li>
             <ul class="experience-list">
                 <li>
+                    
                     <div class="experience-logo">
                         <img
                             src="assets/AILAB.png"
@@ -325,10 +347,15 @@ Resume
                         Student Member<br>
                         - Supervised by
                         <a href="https://scholar.google.com/citations?user=8eNm2GMAAAAJ&hl=en">
-                            Shaohua Kevin Zhou
+                            S. Kevin Zhou
                         </a>,
                         Fellow of IEEE MICCAI AIMBE IAMBE NAI.
                     </div>
+
+                    
+
+
+                    
                 </li>
             </ul>
         </ul>
@@ -481,9 +508,28 @@ Resume
             <li>13 September 2025: MICS, Online <strong><i>(Oral)</i></strong></li>
         </ul>
 
+        <h2 id="moments"><strong>Moments</strong></h2>
+        <div class="moments-grid">
+            <figure>
+                <a href="images/yingcheng.jpg" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="images/yingcheng.jpg"
+                        alt="With my senior schoolmate, Yingcheng Charles Wu"
+                        loading="lazy"
+                    >
+                </a>
+                <figcaption>
+                    With my senior schoolmate,
+                    <a href="https://charles-wu.com/" target="_blank" rel="noopener noreferrer">
+                        Yingcheng Charles Wu
+                    </a>.
+                </figcaption>
+            </figure>
+        </div>
+
         <p>
             <center>
-                &copy; Jincheng Li | Last updated: 29 August 2026
+                &copy; Jincheng Li | Last updated: 8 November 2026
                 <div class="text">
                     <b>Acknowledgement:</b>
                     This page is based on
